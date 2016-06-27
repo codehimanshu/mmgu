@@ -6917,3 +6917,24 @@ Picker.extend( 'pickadate', DatePicker )
       }
     }; // Plugin end
 }( jQuery ));
+
+//sidenav
+$(".button-collapse").sideNav();
+
+//image slider
+$(document).ready(function(){
+  $('.slider').slider({full_width: true});
+});
+
+//navbar dropdown
+  $('.dropdown-button').dropdown({
+      inDuration: 200,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: true, // Displays dropdown below the button
+      alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    }
+  );
+        
