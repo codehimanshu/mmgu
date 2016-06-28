@@ -65,6 +65,26 @@
 
 			<br><br><br><br>
 
+			<!--successful submissioon message-->
+			<?php
+				session_start();
+				if(isset($_SESSION["status"]))
+				if($_SESSION["status"]==true):
+			?>
+				<div class="container">
+					<div class="col s12 m12">
+						<div class="black waves-light btn">
+							Thank you for your Query. Our executives will get back to you soon.
+						</div>
+						<br><br><br><br><br><br>
+					</div>
+				</div>
+			<?php
+				endif;
+				if(!isset($_SESSION["status"])):
+			?>
+
+
 			<!--form-->
 			<div class="container" >
 				<div class="row">
@@ -84,6 +104,11 @@
 			</div>
 
 			<br><br><br>
+
+			<?php
+				endif;
+				session_destroy();
+			?>
 
 			<!--footer-->
 			<footer class="page-footer">
