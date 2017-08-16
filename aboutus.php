@@ -9,7 +9,10 @@
 			<!--Let browser know website is optimized for mobile-->
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		</head>
-
+<script type="text/javascript">
+	console.log(window);
+	
+</script>
 		<body class="red darken-2">
 
 			<!--navbar-->
@@ -62,7 +65,7 @@
 				</ul>
 				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">reorder</i></a>
 			</nav>
-
+			<span id="text"></span>
 
 			<!--footer-->
 			<footer class="page-footer">
